@@ -82,7 +82,7 @@ app.get("/Metadata", function (req, res) {
     .status(200)
     .send(
       samlStrategy.generateServiceProviderMetadata(
-        fs.readFileSync("saml_cert.cer", "utf8")
+        fs.readFileSync("saml_cert.pem", "utf8")
       )
     );
 });
