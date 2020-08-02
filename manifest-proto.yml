@@ -1,0 +1,14 @@
+---
+ applications:
+   - name: saml-test-proto
+     instances: 1
+     memory: 128M
+     disk_quota: 512MB
+     timeout: 180
+     buildpacks:
+      - nodejs_buildpack
+     command: node server.js
+     env:
+        NODE_ENV: development
+        LOGGER_LEVEL: DEBUG
+        OPTIMIZE_MEMORY: true
