@@ -1,3 +1,6 @@
+# Requirements
+ - Work with EAIM to register your app so that is can call EPA SAML service
+
 # Deployment to Cloud.gov
  - cf target -o epa-prototyping -s OWDEV
  - cf push -f manifest-proto.yml
